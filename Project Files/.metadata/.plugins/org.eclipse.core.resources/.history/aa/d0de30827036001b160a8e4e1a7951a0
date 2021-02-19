@@ -1,0 +1,12 @@
+package MetaActions.SetPrice;
+import Data.*;
+public class SetPrice2 extends SetPrice {
+	public void SetPrice(int g) {
+		DS2 dataStore = (DS2) this.d;
+		
+		if(g == 1) {	// selected Regular gas pricing
+			dataStore.price = dataStore.R_price;
+			dataStore.G = g;
+		}
+	}
+}

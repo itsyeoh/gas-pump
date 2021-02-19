@@ -1,0 +1,9 @@
+package MetaActions.GasPumpedMsg;
+import Data.*;
+
+public abstract class GasPumpedMsg {
+	DataStore d;
+	public GasPumpedMsg() { }
+	public GasPumpedMsg(DataStore d) { this.d = d; }
+	public abstract void GasPumpedMsg();
+}

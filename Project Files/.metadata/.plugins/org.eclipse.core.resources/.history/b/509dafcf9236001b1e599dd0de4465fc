@@ -1,0 +1,31 @@
+package MDA_EFSM;
+import OP.OP;
+
+public class S1 extends State {
+	public S1(MDA_EFSM m, OP p) { super(m, p); }
+
+	public void PayCredit() {
+		if (m.s == m.LS[2]) {
+			m.s = m.LS[3];
+		}
+	}
+	
+	public void PayDebit() {
+		if (m.s == m.LS[2]) {
+			p.EnterPinMsg();
+			p.StorePin();
+			m.k = 0;
+			m.s = m.LS[6];
+		}
+	}
+	
+	public void PayCash() {
+		if (m.s == m.LS[2]) {
+			p.StoreCash();
+			p.DisplayMenu();
+			p.SetW(1);
+			m.s = m.LS[4];
+		}
+	}
+	
+}

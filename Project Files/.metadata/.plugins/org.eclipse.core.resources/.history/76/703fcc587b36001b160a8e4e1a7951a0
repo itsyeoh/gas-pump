@@ -1,0 +1,6 @@
+package MetaActions.GasPumpedMsg;
+import Data.*;
+
+public abstract class GasPumpedMsg {
+
+}

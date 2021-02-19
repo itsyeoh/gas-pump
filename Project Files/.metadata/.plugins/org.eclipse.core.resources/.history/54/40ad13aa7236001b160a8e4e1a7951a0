@@ -1,0 +1,15 @@
+package MetaActions.StoreCash;
+import Data.DataStore;
+
+public abstract class StoreCash {
+	DataStore d;
+	public StoreCash() {
+		
+	}
+	
+	public StoreCash(DataStore d) {
+		d = this.d;
+	}
+	
+	public abstract void StoreCash();
+}

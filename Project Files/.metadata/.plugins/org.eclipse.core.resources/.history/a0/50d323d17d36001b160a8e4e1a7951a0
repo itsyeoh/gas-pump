@@ -1,0 +1,7 @@
+package MetaActions.CancelMsg;
+
+public class CancelMsg2 extends CancelMsg{
+	public void CancelMsg() {
+		System.out.println("Transaction cancelled...");
+	}
+}

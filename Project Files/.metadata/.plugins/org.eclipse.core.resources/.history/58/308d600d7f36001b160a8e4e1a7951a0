@@ -1,0 +1,5 @@
+package AF;
+
+public abstract class AbstractFactory {
+
+}

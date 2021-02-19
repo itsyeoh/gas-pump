@@ -1,0 +1,5 @@
+package MetaActions.ReturnCash;
+import Data.*;
+public class ReturnCash1 extends ReturnCash {
+
+}

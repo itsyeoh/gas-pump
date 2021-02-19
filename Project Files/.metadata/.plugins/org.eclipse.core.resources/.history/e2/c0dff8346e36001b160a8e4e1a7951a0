@@ -1,0 +1,9 @@
+package MetaActions.StorePrices;
+import Data.DS1;
+
+public class StorePrices1 extends StorePrices{
+	public void StorePrices() {
+		DS1 dataStore = (DS1) this.d;
+		dataStore.price = dataStore.temp_a;
+	}
+}

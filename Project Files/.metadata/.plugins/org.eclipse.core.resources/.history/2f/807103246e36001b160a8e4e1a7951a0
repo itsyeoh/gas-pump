@@ -1,0 +1,11 @@
+package MetaActions.StorePrices;
+import Data.*;
+
+public abstract class StorePrices {
+	DataStore d;
+	public StorePrices() {
+		this.d = d;
+	}
+	
+	public abstract void StorePrices();
+}

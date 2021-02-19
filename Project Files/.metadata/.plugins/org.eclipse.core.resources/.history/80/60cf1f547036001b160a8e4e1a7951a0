@@ -1,0 +1,5 @@
+package MetaActions.SetPrice;
+import Data.*;
+public class SetPrice2 extends SetPrice {
+	
+}

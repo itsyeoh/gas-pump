@@ -1,0 +1,10 @@
+package MetaActions.PumpGasUnit;
+import Data.*;
+
+public class PumpGasUnit {
+	DataStore d;
+	public PumpGasUnit() { }
+	public PumpGasUnit(DataStore d) { this.d = d; }
+	public abstract void PumpGasUnit();
+	
+}

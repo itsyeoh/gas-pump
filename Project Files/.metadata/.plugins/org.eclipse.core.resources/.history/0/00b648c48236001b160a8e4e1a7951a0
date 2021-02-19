@@ -1,0 +1,10 @@
+package MetaActions.SetInitialValues;
+import Data.*;
+
+public class SetInitialValues2 extends SetInitialValues {
+	public void SetInitialValues() {
+		DS2 dataStore = (DS2) this.d;
+		dataStore.G = 0;
+		dataStore.total = 0;
+	}
+}

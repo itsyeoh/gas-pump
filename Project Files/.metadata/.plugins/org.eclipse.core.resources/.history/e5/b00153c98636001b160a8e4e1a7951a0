@@ -1,0 +1,9 @@
+package MDA_EFSM;
+
+public class Start extends State {
+	public Start(MDA_EFSM m) { super(m); }
+
+	public void Activate() {
+//		if this.m
+	}
+}

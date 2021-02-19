@@ -1,0 +1,11 @@
+package Data;
+
+public class DS1 extends DataStore {
+	int temp_c;
+	int cash;
+	int total;
+	int L;
+	int price;
+	int temp_a;
+	int w;
+}

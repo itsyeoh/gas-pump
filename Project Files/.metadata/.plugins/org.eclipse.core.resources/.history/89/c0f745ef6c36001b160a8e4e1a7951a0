@@ -1,0 +1,6 @@
+package MetaActions.StorePrices;
+import Data.*;
+
+public class StorePrices2 extends StorePrices {
+
+}

@@ -1,0 +1,12 @@
+package MetaActions.PayMsg;
+
+import Data.DataStore;
+
+public class PayMsg1 extends PayMsg{
+	public PayMsg1(DataStore d) { super(d); }
+	
+	public void PayMsg() {
+		System.out.println("Select payment method for GP-1: ");
+		System.out.println(" Cash or credit? ");
+	}
+}

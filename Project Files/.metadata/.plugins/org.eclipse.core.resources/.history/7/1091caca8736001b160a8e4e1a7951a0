@@ -1,0 +1,7 @@
+package MDA_EFSM;
+import OP.OP;
+
+public class S0 
+{
+
+}

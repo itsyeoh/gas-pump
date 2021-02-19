@@ -1,0 +1,10 @@
+package MetaActions.EjectCard;
+import Data.*;
+
+public class EjectCard2 extends EjectCard {
+	public void EjectCard() {
+		DS2 dataStore = (DS2)this.d;
+		dataStore.pin = -1;
+		dataStore.temp_p = -1;
+	}
+}

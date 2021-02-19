@@ -1,0 +1,7 @@
+package MetaActions.ReturnCash;
+
+public class ReturnCash2 extends ReturnCash {
+	public void ReturnCash() {
+		
+	}
+}

@@ -1,0 +1,5 @@
+package MetaActions.SetW;
+import Data.*;
+public class SetW1 extends SetW {
+
+}

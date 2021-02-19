@@ -1,0 +1,87 @@
+package GasPumps;
+import Data.*;
+import MDA_EFSM.*;
+import OP.OP;
+import AF.*;
+
+public class GP2 {
+	public DS2 d;
+	public MDA_EFSM m;
+	public OP p;
+	public GP2Factory af;
+	
+	public GP2() {
+		d = new DS2();
+		af = new GP2Factory(d);
+		p = new OP(af);
+		m = new MDA_EFSM(p);
+	}
+	
+	public void Activate(float a, float b, float c) {
+		if(a>0 && b>0 && c>0) {
+			d.temp_a = a;
+			d.temp_b = b;
+			d.temp_c = c;
+			m.Activate();
+		}
+	}
+	
+	public void Start() {
+		m.Start();
+	}
+	
+	public void PayCredit() {
+		m.PayCredit();
+	}
+	
+	public void Reject() {
+		m.Reject();
+	}
+	
+	public void PayDebit(String p) {
+		d.temp_p = p;
+		m.PayDebit();
+	}
+	
+	public void Pin(String x) {
+		if(d.pin == x) { m.CorrectPin(); }
+		else { m.IncorrectPin(1); };
+	}
+	
+	public void Cancel() {
+		m.Cancel();
+	}
+	
+	public void Approved() {
+		m.Approved();
+	}
+	
+	public void Diesel() {
+		m.SelectGas(3);
+	}
+	
+	public void Regular() {
+		m.SelectGas(1);
+	}
+		
+	public void StartPump() {
+		m.StartPump();
+	}
+	
+	public void PumpGallon() {
+		m.Pump();
+	}
+	
+	public void StopPump() {
+		m.StopPump();
+	}
+	
+	public void FullTank() {
+		m.StopPump();
+	}
+	
+	public void Super() {
+		m.SelectGas(2);
+	}
+	
+}

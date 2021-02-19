@@ -1,0 +1,136 @@
+package AF;
+
+import MetaActions.CancelMsg.CancelMsg;
+import MetaActions.DisplayMenu.DisplayMenu;
+import MetaActions.EjectCard.EjectCard;
+import MetaActions.EnterPinMsg.EnterPinMsg;
+import MetaActions.GasPumpedMsg.GasPumpedMsg;
+import MetaActions.InitializeData.InitializeData;
+import MetaActions.PayMsg.PayMsg;
+import MetaActions.PrintReceipt.PrintReceipt;
+import MetaActions.PumpGasUnit.PumpGasUnit;
+import MetaActions.RejectMsg.RejectMsg;
+import MetaActions.ReturnCash.ReturnCash;
+import MetaActions.SetInitialValues.SetInitialValues;
+import MetaActions.SetPrice.SetPrice;
+import MetaActions.SetW.SetW;
+import MetaActions.StoreCash.StoreCash;
+import MetaActions.StorePin.StorePin;
+import MetaActions.StorePrices.StorePrices;
+import MetaActions.WrongPinMsg.WrongPinMsg;
+import Data.*;
+
+public class GP1Factory extends AbstractFactory {
+	DataStore dataStore;
+	
+	public GP1Factory() {
+		dataStore = new DS1();
+	}
+	
+	@Override
+	public StorePrices GetStorePrices() {
+		return new StorePrices(dataStore);
+	}
+
+	@Override
+	public PayMsg GetPayMsg() {
+		return new PayMsg();
+	}
+
+	@Override
+	public StoreCash GetStoreCash() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DisplayMenu GetDisplayMenu() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RejectMsg GetRejectMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SetPrice GetSetPrices() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SetInitialValues GetSetInitialValues() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PumpGasUnit GetPumpGasUnit() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public GasPumpedMsg GetGasPumpedMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PrintReceipt GetPrintReceipt() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CancelMsg GetCancelMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ReturnCash GetReturnCash() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public WrongPinMsg GetWrongPinMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public StorePin GetStorePin() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EnterPinMsg GetEnterPinMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public InitializeData GetInitializeData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SetW GetSetW() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EjectCard GetEjectCard() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,9 @@
+package MetaActions.PayMsg;
+
+import Data.DataStore;
+
+public class PayMsg1 extends PayMsg{
+	public void PayMsg() {
+		System.out.println("You could now select a payment method (2) or (6).");
+	}
+}

@@ -1,0 +1,8 @@
+package MetaActions.RejectMsg;
+
+//All of the methods here are implemented using Strategy pattern.
+public class RejectMsg1 extends RejectMsg {
+	public void RejectMsg() {
+		System.out.println("Card is rejected...");
+	}
+}

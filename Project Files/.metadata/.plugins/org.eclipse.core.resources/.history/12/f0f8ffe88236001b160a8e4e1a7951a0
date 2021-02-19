@@ -1,0 +1,12 @@
+package MetaActions.PrintReceipt;
+import Data.*;
+
+public class PrintReceipt2 extends PrintReceipt {
+	public void PrintReceipt() {
+		DS2 dataStore = (DS2)this.d;
+		System.out.println("[RECEIPT]");
+		System.out.println("Gallons pumped: " + dataStore.G);
+		System.out.println("Price/gallon: $" + dataStore.price);
+		System.out.println("Total price: $" + dataStore.total);
+	}
+}

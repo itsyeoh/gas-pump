@@ -1,0 +1,9 @@
+package AF;
+
+import Data.*;
+import MetaActions.*;
+
+public abstract class AbstractFactory {
+	public abstract StorePrices GetStorePrices();
+	
+}

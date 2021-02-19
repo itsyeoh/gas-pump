@@ -1,0 +1,5 @@
+package MetaActions.SetW;
+
+public abstract class SetW {
+
+}

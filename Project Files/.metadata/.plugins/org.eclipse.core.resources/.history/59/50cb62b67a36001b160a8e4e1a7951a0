@@ -1,0 +1,8 @@
+package MetaActions.PayMsg;
+
+public class PayMsg1 extends PayMsg{
+	public void PayMsg() {
+		System.out.println("Select payment method for GP-1: ");
+		System.out.println(" Cash or credit? ")
+	}
+}

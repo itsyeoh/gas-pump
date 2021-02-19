@@ -1,0 +1,45 @@
+package AF;
+
+import Data.DataStore;
+import MetaActions.CancelMsg.CancelMsg;
+import MetaActions.DisplayMenu.DisplayMenu;
+import MetaActions.EjectCard.EjectCard;
+import MetaActions.EnterPinMsg.EnterPinMsg;
+import MetaActions.GasPumpedMsg.GasPumpedMsg;
+import MetaActions.InitializeData.InitializeData;
+import MetaActions.PayMsg.PayMsg;
+import MetaActions.PrintReceipt.PrintReceipt;
+import MetaActions.PumpGasUnit.PumpGasUnit;
+import MetaActions.RejectMsg.RejectMsg;
+import MetaActions.ReturnCash.ReturnCash;
+import MetaActions.SetInitialValues.SetInitialValues;
+import MetaActions.SetPrice.SetPrice;
+import MetaActions.SetW.SetW;
+import MetaActions.StoreCash.StoreCash;
+import MetaActions.StorePin.StorePin;
+import MetaActions.StorePrices.StorePrices;
+import MetaActions.WrongPinMsg.WrongPinMsg;
+
+// This contains all abstract factory methods.
+public abstract class AbstractFactory {
+	public DataStore dataStore;
+	
+	public abstract StorePrices GetStorePrices();
+	public abstract PayMsg GetPayMsg();
+	public abstract StoreCash GetStoreCash();
+	public abstract DisplayMenu GetDisplayMenu();
+	public abstract RejectMsg GetRejectMsg();
+	public abstract SetPrice GetSetPrices();
+	public abstract SetInitialValues GetSetInitialValues();
+	public abstract PumpGasUnit GetPumpGasUnit();
+	public abstract GasPumpedMsg GetGasPumpedMsg();
+	public abstract PrintReceipt GetPrintReceipt();
+	public abstract CancelMsg GetCancelMsg();
+	public abstract ReturnCash GetReturnCash();
+	public abstract WrongPinMsg GetWrongPinMsg();
+	public abstract StorePin GetStorePin();
+	public abstract EnterPinMsg GetEnterPinMsg();
+	public abstract InitializeData GetInitializeData();
+	public abstract SetW GetSetW();
+	public abstract EjectCard GetEjectCard();
+}

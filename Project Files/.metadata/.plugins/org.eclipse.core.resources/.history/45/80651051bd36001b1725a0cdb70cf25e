@@ -1,0 +1,7 @@
+package MetaActions.EnterPinMsg;
+
+public class EnterPinMsg2 extends EnterPinMsg {
+	public void EnterPinMsg() {
+		System.out.println("Please enter your pin...");
+	}
+}

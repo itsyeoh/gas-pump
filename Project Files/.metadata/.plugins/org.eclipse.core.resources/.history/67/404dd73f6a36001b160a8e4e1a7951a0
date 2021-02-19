@@ -1,0 +1,15 @@
+package Data;
+
+public class DS2 extends DataStore {
+	float temp_a;
+	float temp_b;
+	String temp_p;
+	String pin;
+	float price;
+	int G;
+	float total;
+	float Rprice;
+	float Dprice;
+	float temp_c;
+	flaot Sprice;
+}

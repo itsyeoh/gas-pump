@@ -1,0 +1,7 @@
+package MetaActions.StoreCash;
+
+public class StoreCash2 extends StoreCash {
+	public void StoreCash() {
+		
+	}
+}

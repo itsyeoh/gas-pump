@@ -1,0 +1,5 @@
+package MetaActions.InitializeData;
+
+public class InitializeData1 extends InitializeData {
+	public void InitializeData() { /* do nothing */ } 
+}

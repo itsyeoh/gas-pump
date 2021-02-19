@@ -1,0 +1,7 @@
+package MetaActions.RejectMsg;
+
+public class RejectMsg2 extends RejectMsg {
+	public void RejectMsg() {
+		System.out.println("Card is rejected...")
+	}
+}

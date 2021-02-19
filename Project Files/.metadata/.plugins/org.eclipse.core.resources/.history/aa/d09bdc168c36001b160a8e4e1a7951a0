@@ -1,0 +1,19 @@
+package GasPumps;
+import Data.*;
+import MDA_EFSM.*;
+import OP.OP;
+import AF.*;
+
+public abstract class GP1 {
+	public DataStore d;
+	public MDA_EFSM m;
+	public OP p;
+	public AbstractFactory af;
+	
+	public GP1() {
+		d = new DS1();
+		af = new GP1Factory();
+		p = new OP(af);
+		m = new MDA_EFSM(p);
+	}
+}

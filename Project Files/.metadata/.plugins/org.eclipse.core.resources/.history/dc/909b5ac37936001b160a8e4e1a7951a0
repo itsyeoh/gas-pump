@@ -1,0 +1,9 @@
+package MetaActions.PrintReceipt;
+import Data.*;
+
+public class PrintReceipt1 extends PrintReceipt {
+	public void PrintReceipt() {
+		DS1 dataStore = (DS1)this.d;
+		
+	}
+}

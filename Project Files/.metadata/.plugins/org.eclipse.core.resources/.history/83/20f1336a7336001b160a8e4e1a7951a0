@@ -1,0 +1,6 @@
+package MetaActions.ReturnCash;
+import Data.*;
+
+public abstract class ReturnCash {
+
+}

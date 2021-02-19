@@ -1,0 +1,27 @@
+package MDA_EFSM;
+import OP.OP;
+
+public abstract class State {
+	public MDA_EFSM m;
+	public OP p;
+	int k;
+	
+	public State(MDA_EFSM m, OP p) { 
+		this.m = m; 
+		this.p = p;
+	}
+	
+	public abstract void Activate();
+	public abstract void Start();
+	public abstract void Reject();
+	public abstract void Cancel();
+	public abstract void Approved();
+	public abstract void StartPump();
+	public abstract void Pump();
+	public abstract void SelectGas(int g);
+	public abstract void CorrectPin();
+	public abstract void IncorrectPin(int max);
+	public abstract void PayCash();
+	public abstract void PayCredit();
+	public abstract void PayDebit();
+}

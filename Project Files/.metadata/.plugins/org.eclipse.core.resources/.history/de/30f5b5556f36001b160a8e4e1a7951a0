@@ -1,0 +1,8 @@
+package MetaActions.StoreCash;
+import Data.*;
+
+public class StoreCash1 extends StoreCash {
+	public void StoreCash() {
+		DS1
+	}
+}

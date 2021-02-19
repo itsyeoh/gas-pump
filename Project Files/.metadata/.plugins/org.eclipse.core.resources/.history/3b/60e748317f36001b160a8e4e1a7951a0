@@ -1,0 +1,8 @@
+package AF;
+
+import Data.*;
+import MetaActions.*;
+
+public abstract class AbstractFactory {
+
+}

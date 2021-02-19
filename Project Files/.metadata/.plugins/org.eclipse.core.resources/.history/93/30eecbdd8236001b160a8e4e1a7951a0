@@ -1,0 +1,9 @@
+package MetaActions.GasPumpedMsg;
+import Data.*;
+
+public class GasPumpedMsg2 extends GasPumpedMsg {
+	public void GasPumpedMsg() {
+		DS2 dataStore = (DS2)this.d;
+		System.out.println("The system pumped " + dataStore.G + " gallons.");
+	}
+}

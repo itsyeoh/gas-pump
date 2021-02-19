@@ -1,0 +1,7 @@
+package GasPumps;
+import Data.*;
+import MDA_EFSM.*;
+
+public abstract class GP {
+	public DataStore d;
+}

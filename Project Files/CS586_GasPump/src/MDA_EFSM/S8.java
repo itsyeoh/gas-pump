@@ -1,0 +1,30 @@
+package MDA_EFSM;
+import OP.OP;
+
+//This is state S8, part of the state pattern design for MDA-EFSM.
+public class S8 extends State {
+	public S8(MDA_EFSM m, OP p) { super(m, p); }
+	
+	public void IncorrectPin(int max) {
+		if(m.s == m.LS[6]) {
+			if(m.k > max) {
+				p.WrongPinMsg();
+				p.EjectCard();
+				m.s = m.LS[1];
+				System.out.println("Current State: S0");
+			} else if(m.k <= max) {
+				p.WrongPinMsg();
+				m.k = m.k + 1;
+				System.out.println("Current State: S8");
+			}
+		}
+	}
+	
+	public void CorrectPin() {
+		if(m.s == m.LS[6]) {
+			p.DisplayMenu();
+			p.EjectCard();
+			m.s = m.LS[4];
+		}
+	}
+}

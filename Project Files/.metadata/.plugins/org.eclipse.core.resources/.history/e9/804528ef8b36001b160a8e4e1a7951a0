@@ -1,0 +1,103 @@
+package AF;
+
+import MetaActions.CancelMsg.*;
+import MetaActions.DisplayMenu.*;
+import MetaActions.EjectCard.*;
+import MetaActions.EnterPinMsg.*;
+import MetaActions.GasPumpedMsg.*;
+import MetaActions.InitializeData.*;
+import MetaActions.PayMsg.*;
+import MetaActions.PrintReceipt.*;
+import MetaActions.PumpGasUnit.*;
+import MetaActions.RejectMsg.*;
+import MetaActions.ReturnCash.*;
+import MetaActions.SetInitialValues.*;
+import MetaActions.SetPrice.*;
+import MetaActions.SetW.*;
+import MetaActions.StoreCash.*;
+import MetaActions.StorePin.*;
+import MetaActions.StorePrices.*;
+import MetaActions.WrongPinMsg.*;
+import Data.*;
+
+public class GP2Factory extends AbstractFactory {
+	// Gas Pump 2 associated data structure
+	DataStore dataStore;
+
+	public GP2Factory(DataStore d) {
+		dataStore = (DS2)d;
+	}
+	
+	public StorePrices GetStorePrices() {
+		return new StorePrices2(dataStore);
+	}
+
+	public PayMsg GetPayMsg() {
+		return new PayMsg2();
+	}
+
+	public StoreCash GetStoreCash() {
+		return new StoreCash2(dataStore);
+	}
+
+	public DisplayMenu GetDisplayMenu() {
+		return new DisplayMenu2();
+	}
+
+	public RejectMsg GetRejectMsg() {
+		return new RejectMsg2();
+	}
+
+	public SetPrice GetSetPrices() {
+		return new SetPrice2(dataStore);
+	}
+
+	public SetInitialValues GetSetInitialValues() {
+		return new SetInitialValues2(dataStore);
+	}
+
+	public PumpGasUnit GetPumpGasUnit() {
+		return new PumpGasUnit2(dataStore);
+	}
+
+	public GasPumpedMsg GetGasPumpedMsg() {
+		return new GasPumpedMsg2(dataStore);
+	}
+
+	public PrintReceipt GetPrintReceipt() {
+		return new PrintReceipt2(dataStore);
+	}
+
+	public CancelMsg GetCancelMsg() {
+		return new CancelMsg2();
+	}
+
+	public ReturnCash GetReturnCash() {
+		return new ReturnCash2(dataStore);
+	}
+
+	public WrongPinMsg GetWrongPinMsg() {
+		return new WrongPinMsg2();
+	}
+
+	public StorePin GetStorePin() {
+		return new StorePin2(dataStore);
+	}
+
+	public EnterPinMsg GetEnterPinMsg() {
+		return new EnterPinMsg2();
+	}
+
+	public InitializeData GetInitializeData() {
+		return new InitializeData2(dataStore);
+	}
+
+	public SetW GetSetW() {
+		return new SetW2();
+	}
+
+	public EjectCard GetEjectCard() {
+		return new EjectCard2(dataStore);
+	}
+
+}

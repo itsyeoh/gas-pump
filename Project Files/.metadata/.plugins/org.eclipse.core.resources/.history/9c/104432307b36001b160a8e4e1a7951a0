@@ -1,0 +1,6 @@
+package MetaActions.InitializeData;
+import Data.*;
+
+public class InitializeData2 {
+	
+}

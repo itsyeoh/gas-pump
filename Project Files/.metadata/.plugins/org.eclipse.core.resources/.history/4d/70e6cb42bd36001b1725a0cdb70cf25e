@@ -1,0 +1,5 @@
+package MetaActions.EjectCard;
+
+public class EjectCard1 extends EjectCard {
+	public void EjectCard() {} 
+}

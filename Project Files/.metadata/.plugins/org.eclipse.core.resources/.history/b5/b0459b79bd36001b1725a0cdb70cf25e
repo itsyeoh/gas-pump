@@ -1,0 +1,9 @@
+package MetaActions.PrintReceipt;
+import Data.*;
+
+public abstract class PrintReceipt {
+	DataStore d;
+	public PrintReceipt() { }
+	public PrintReceipt(DataStore d) { this.d = d; }
+	public abstract void PrintReceipt();
+}

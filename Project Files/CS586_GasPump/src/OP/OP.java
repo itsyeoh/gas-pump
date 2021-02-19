@@ -1,0 +1,102 @@
+package OP;
+import AF.*;
+import MetaActions.CancelMsg.*;
+import MetaActions.DisplayMenu.*;
+import MetaActions.EjectCard.*;
+import MetaActions.EnterPinMsg.*;
+import MetaActions.GasPumpedMsg.*;
+import MetaActions.InitializeData.*;
+import MetaActions.PayMsg.*;
+import MetaActions.PrintReceipt.*;
+import MetaActions.PumpGasUnit.*;
+import MetaActions.RejectMsg.*;
+import MetaActions.ReturnCash.*;
+import MetaActions.SetInitialValues.*;
+import MetaActions.SetPrice.*;
+import MetaActions.SetW.*;
+import MetaActions.StoreCash.*;
+import MetaActions.StorePin.*;
+import MetaActions.StorePrices.*;
+import MetaActions.WrongPinMsg.*;
+
+// All of the methods here are implemented using Strategy pattern.
+
+public class OP {
+	AbstractFactory af;
+	
+	public OP(AbstractFactory af) {
+		this.af = af;
+	}
+	
+	public void StorePrices() {
+		af.GetStorePrices().StorePrices();
+	}
+	
+	public void PayMsg() {
+		af.GetPayMsg().PayMsg();
+	}
+	
+	public void StoreCash() {
+		this.af.GetStoreCash().StoreCash();
+	}
+	
+	public void DisplayMenu() {
+		af.GetDisplayMenu().DisplayMenu();
+	}
+	
+	public void RejectMsg() {
+		af.GetRejectMsg().RejectMsg();
+	}
+	
+	public void SetPrice(int g) {
+		af.GetSetPrices().SetPrice(g);
+	}
+	
+	public void SetInitialValues() {
+		af.GetSetInitialValues().SetInitialValues();
+	}
+	
+	public void PumpGasUnit() {
+		af.GetPumpGasUnit().PumpGasUnit();
+	}
+	
+	public void GasPumpedMsg() {
+		af.GetGasPumpedMsg().GasPumpedMsg();
+	}
+	
+	public void PrintReceipt() {
+		af.GetPrintReceipt().PrintReceipt();
+	}
+	
+	public void CancelMsg() {
+		af.GetCancelMsg().CancelMsg();
+	}
+	
+	public void ReturnCash() {
+		af.GetReturnCash().ReturnCash();
+	}
+	
+	public void WrongPinMsg() {
+		af.GetWrongPinMsg().WrongPinMsg();
+	}
+	
+	public void StorePin() {
+		af.GetStorePin().StorePin();
+	}
+	
+	public void EnterPinMsg() {
+		af.GetEnterPinMsg().EnterPinMsg();
+	}
+	
+	public void InitializeData() {
+		af.GetInitializeData().InitializeData();
+	}
+	
+	public void SetW(int w) {
+		af.GetSetW().SetW(w);
+	}
+	
+	public void EjectCard() {
+		af.GetEjectCard().EjectCard();
+	}
+}

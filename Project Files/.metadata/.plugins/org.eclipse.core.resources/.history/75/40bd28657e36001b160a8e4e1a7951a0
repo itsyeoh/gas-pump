@@ -1,0 +1,8 @@
+package MetaActions.EjectCard;
+import Data.*;
+
+public class EjectCard2 extends EjectCard {
+	public void EjectCard() {
+		
+	}
+}

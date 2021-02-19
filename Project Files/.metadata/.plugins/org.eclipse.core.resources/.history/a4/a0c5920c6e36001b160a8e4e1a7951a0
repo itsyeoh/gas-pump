@@ -1,0 +1,8 @@
+package MetaActions.StorePin;
+import Data.*;
+
+public abstract class StorePin {
+	public StorePin() {
+		
+	}
+}

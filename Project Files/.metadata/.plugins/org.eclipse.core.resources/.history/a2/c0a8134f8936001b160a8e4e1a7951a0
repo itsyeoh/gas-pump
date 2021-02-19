@@ -1,0 +1,15 @@
+package MDA_EFSM;
+import OP.OP;
+
+public class S3 extends State {
+	public S3(MDA_EFSM m, OP p) { super(m, p); }
+
+	public void SelectGas(int g) {
+		if (m.s == m.LS[4]) {
+			p.SetPrice(g);
+			p.EjectCard();
+			m.s = m.LS[4];
+		}
+	}
+	
+}

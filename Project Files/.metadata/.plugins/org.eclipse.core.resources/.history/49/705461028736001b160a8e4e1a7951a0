@@ -1,0 +1,10 @@
+package MDA_EFSM;
+import OP.OP;
+public class Start extends State {
+	public Start(MDA_EFSM m, OP p) { super(m); }
+
+
+	public void Activate() {
+//		if this.m
+	}
+}

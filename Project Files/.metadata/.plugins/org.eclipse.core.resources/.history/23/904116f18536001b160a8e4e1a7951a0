@@ -1,0 +1,11 @@
+package MDA_EFSM;
+
+public abstract class State {
+	public MDA_EFSM m;
+	
+	public State(MDA_EFSM m) { this.m = m; }
+	
+	public abstract void Activate();
+	public abstract void Start();
+	public abstract void Reject();
+}

@@ -1,0 +1,5 @@
+package MetaActions.SetPrice;
+
+public abstract class SetPrice {
+
+}

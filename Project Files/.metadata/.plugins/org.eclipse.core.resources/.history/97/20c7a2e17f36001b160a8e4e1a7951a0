@@ -1,0 +1,28 @@
+package AF;
+
+import Data.*;
+import MetaActions.*.*;
+import MetaActions.CancelMsg.CancelMsg;
+import MetaActions.DisplayMenu.DisplayMenu;
+import MetaActions.StorePrices.StorePrices;
+
+public abstract class AbstractFactory {
+	public abstract StorePrices GetStorePrices();
+	public abstract PayMsg GetPayMsg();
+	public abstract StoreCash GetStoreCash();
+	public abstract DisplayMenu GetDisplayMenu();
+	public abstract RejectMsg GetRejectMsg();
+	public abstract SetPrice GetSetPrices();
+	public abstract SetInitialValues GetSetInitialValues();
+	public abstract PumpGasUnit GetPumpGasUnit();
+	public abstract GasPumpedMsg GetGasPumpedMsg();
+	public abstract PrintReceipt GetPrintReceipt();
+	public abstract CancelMsg GetCancelMsg();
+	public abstract ReturnCash GetReturnCash();
+	public abstract WrongPinMsg GetWrongPinMsg();
+	public abstract StorePin GetStorePin();
+	public abstract EnterPinMsg GetEnterPinMsg();
+	public abstract InitializeData GetInitializeData();
+	public abstract SetW GetSetW();
+	public abstract EjectCard GetEjectCard();
+}

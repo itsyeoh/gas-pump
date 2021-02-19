@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="MetaActions.StorePrices.StorePrices"/>
+    <fullyQualifiedTypeName name="MetaActions.CancelMsg.CancelMsg"/>
+    <fullyQualifiedTypeName name="MetaActions.DisplayMenu.DisplayMenu"/>
+    <fullyQualifiedTypeName name="MetaActions.PayMsg.PayMsg"/>
+    <fullyQualifiedTypeName name="MetaActions.StoreCash.StoreCash"/>
+    <fullyQualifiedTypeName name="MetaActions.RejectMsg.RejectMsg"/>
+    <fullyQualifiedTypeName name="MetaActions.SetInitialValues.SetInitialValues"/>
+    <fullyQualifiedTypeName name="MetaActions.SetPrice.SetPrice"/>
+    <fullyQualifiedTypeName name="MetaActions.PumpGasUnit.PumpGasUnit"/>
+    <fullyQualifiedTypeName name="MetaActions.GasPumpedMsg.GasPumpedMsg"/>
+    <fullyQualifiedTypeName name="MetaActions.PrintReceipt.PrintReceipt"/>
+    <fullyQualifiedTypeName name="MetaActions.ReturnCash.ReturnCash"/>
+    <fullyQualifiedTypeName name="MetaActions.WrongPinMsg.WrongPinMsg"/>
+    <fullyQualifiedTypeName name="MetaActions.StorePin.StorePin"/>
+    <fullyQualifiedTypeName name="MetaActions.EnterPinMsg.EnterPinMsg"/>
+    <fullyQualifiedTypeName name="MetaActions.InitializeData.InitializeData"/>
+    <fullyQualifiedTypeName name="MetaActions.SetW.SetW"/>
+    <fullyQualifiedTypeName name="MetaActions.EjectCard.EjectCard"/>
+    <fullyQualifiedTypeName name="OP.OP"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Data.DataStore"/>
+</qualifiedTypeNameHistroy>

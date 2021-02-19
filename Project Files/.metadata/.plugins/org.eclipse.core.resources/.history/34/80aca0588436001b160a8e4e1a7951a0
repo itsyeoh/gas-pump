@@ -1,0 +1,32 @@
+package OP;
+import AF.*;
+import MetaActions.CancelMsg.*;
+import MetaActions.DisplayMenu.*;
+import MetaActions.EjectCard.*;
+import MetaActions.EnterPinMsg.*;
+import MetaActions.GasPumpedMsg.*;
+import MetaActions.InitializeData.*;
+import MetaActions.PayMsg.*;
+import MetaActions.PrintReceipt.*;
+import MetaActions.PumpGasUnit.*;
+import MetaActions.RejectMsg.*;
+import MetaActions.ReturnCash.*;
+import MetaActions.SetInitialValues.*;
+import MetaActions.SetPrice.*;
+import MetaActions.SetW.*;
+import MetaActions.StoreCash.*;
+import MetaActions.StorePin.*;
+import MetaActions.StorePrices.*;
+import MetaActions.WrongPinMsg.*;
+
+public class OP {
+	AbstractFactory af;
+	
+	public OP(AbstractFactory af) {
+		this.af = af;
+	}
+	
+	public void StorePrices() {
+		af.GetStorePrices().StorePrices();
+	}
+}

@@ -1,0 +1,6 @@
+package MDA_EFSM;
+
+public abstract class State {
+	public MDA_EFSM m;
+	
+}

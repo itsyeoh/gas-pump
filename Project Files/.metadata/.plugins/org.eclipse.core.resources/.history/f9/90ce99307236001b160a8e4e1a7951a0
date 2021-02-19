@@ -1,0 +1,6 @@
+package MetaActions.SetInitialValues;
+import Data.*;
+
+public class SetInitialValues1 extends SetInitialValues {
+
+}

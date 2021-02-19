@@ -1,0 +1,6 @@
+package MetaActions.PrintReceipt;
+import Data.*;
+
+public class PrintReceipt1 extends PrintReceipt {
+
+}

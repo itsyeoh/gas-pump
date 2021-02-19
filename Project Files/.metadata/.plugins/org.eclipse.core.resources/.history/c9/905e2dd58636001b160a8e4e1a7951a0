@@ -1,0 +1,11 @@
+package MDA_EFSM;
+
+public class MDA_EFSM {
+	public State s;
+	public State[] LS;
+	
+	public MDA_EFSM() {
+		LS[0] = new Start();
+		LS[1] = new S0();
+	}
+}

@@ -1,0 +1,9 @@
+package MetaActions.InitializeData;
+import Data.*;
+
+public class InitializeData2 extends InitializeData {
+	public void InitializeData() {
+		DS2 dataStore = (DS2)this.d;
+		dataStore.price = 0;
+	}
+}

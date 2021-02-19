@@ -1,0 +1,9 @@
+package MetaActions.ReturnCash;
+import Data.*;
+
+public abstract class ReturnCash {
+	DataStore d;
+	
+	public ReturnCash() { }
+	public ReturnCash(DataStore d) { this.d = d; }
+}

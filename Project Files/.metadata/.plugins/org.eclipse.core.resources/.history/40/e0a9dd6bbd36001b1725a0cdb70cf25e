@@ -1,0 +1,8 @@
+package MetaActions.InitializeData;
+
+import Data.DataStore;
+
+public class InitializeData1 extends InitializeData {
+
+	public void InitializeData() { /* do nothing */ } 
+}

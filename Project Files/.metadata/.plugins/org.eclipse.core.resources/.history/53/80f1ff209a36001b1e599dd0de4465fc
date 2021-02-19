@@ -1,0 +1,135 @@
+package OP;
+import AF.*;
+import MetaActions.CancelMsg.*;
+import MetaActions.DisplayMenu.*;
+import MetaActions.EjectCard.*;
+import MetaActions.EnterPinMsg.*;
+import MetaActions.GasPumpedMsg.*;
+import MetaActions.InitializeData.*;
+import MetaActions.PayMsg.*;
+import MetaActions.PrintReceipt.*;
+import MetaActions.PumpGasUnit.*;
+import MetaActions.RejectMsg.*;
+import MetaActions.ReturnCash.*;
+import MetaActions.SetInitialValues.*;
+import MetaActions.SetPrice.*;
+import MetaActions.SetW.*;
+import MetaActions.StoreCash.*;
+import MetaActions.StorePin.*;
+import MetaActions.StorePrices.*;
+import MetaActions.WrongPinMsg.*;
+
+public class OP {
+	AbstractFactory af;
+	public StorePrices StorePrices;
+	public PayMsg PayMsg;
+	public StoreCash StoreCash;
+	public DisplayMenu DisplayMenu;
+	public RejectMsg RejectMsg;
+	public SetPrice SetPrice;
+	public SetInitialValues SetInitialValues;
+	public PumpGasUnit PumpGasUnit;
+	public GasPumpedMsg GasPumpedMsg;
+	public PrintReceipt PrintReceipt;
+	public CancelMsg CancelMsg;
+	public ReturnCash ReturnCash;
+	public WrongPinMsg WrongPinMsg;
+	public StorePin StorePin;
+	public EnterPinMsg EnterPinMsg;
+	public InitializeData InitializeData;
+	public SetW SetW;
+	public EjectCard EjectCard;
+	
+	public OP(AbstractFactory af) {
+		StorePrices = af.GetStorePrices();
+		PayMsg = af.GetPayMsg();
+		StoreCash = af.GetStoreCash();
+		DisplayMenu = af.GetDisplayMenu();
+		RejectMsg = af.GetRejectMsg();
+		SetPrice = af.GetSetPrices();
+		SetInitialValues = af.GetSetInitialValues();
+		PumpGasUnit = af.GetPumpGasUnit();
+		GasPumpedMsg = af.GetGasPumpedMsg();
+		PrintReceipt = af.GetPrintReceipt();
+		CancelMsg = af.GetCancelMsg();
+		ReturnCash = af.GetReturnCash();
+		WrongPinMsg = af.GetWrongPinMsg();
+		StorePin = af.GetStorePin();
+		EnterPinMsg = af.GetEnterPinMsg();
+		InitializeData = af.GetInitializeData();
+		SetW = af.GetSetW();
+		EjectCard = af.GetEjectCard();
+	}
+	
+	public void StorePrices() {
+		StorePrices.StorePrices();
+	}
+	
+	public void PayMsg() {
+		PayMsg.PayMsg();
+	}
+	
+	public void StoreCash() {
+		StoreCash.StoreCash();
+	}
+	
+	public void DisplayMenu() {
+		DisplayMenu.DisplayMenu();
+	}
+	
+	public void RejectMsg() {
+		RejectMsg.RejectMsg();
+	}
+	
+	public void SetPrice(int g) {
+		SetPrices.SetPrice(g);
+	}
+	
+	public void SetInitialValues() {
+		SetInitialValues.SetInitialValues();
+	}
+	
+	public void PumpGasUnit() {
+		PumpGasUnit.PumpGasUnit();
+	}
+	
+	public void GasPumpedMsg() {
+		GasPumpedMsg.GasPumpedMsg();
+	}
+	
+	public void PrintReceipt() {
+		PrintReceipt.PrintReceipt();
+	}
+	
+	public void CancelMsg() {
+		CancelMsg.CancelMsg();
+	}
+	
+	public void ReturnCash() {
+		ReturnCash.ReturnCash();
+	}
+	
+	public void WrongPinMsg() {
+		WrongPinMsg.WrongPinMsg();
+	}
+	
+	public void StorePin() {
+		StorePin.StorePin();
+	}
+	
+	public void EnterPinMsg() {
+		EnterPinMsg.EnterPinMsg();
+	}
+	
+	public void InitializeData() {
+		InitializeData.InitializeData();
+	}
+	
+	public void SetW(int w) {
+		SetW.SetW(w);
+	}
+	
+	public void EjectCard() {
+		EjectCard.EjectCard();
+	}
+}

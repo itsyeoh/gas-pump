@@ -1,0 +1,5 @@
+package MetaActions.InitializeData;
+
+public abstract class InitializeData {
+
+}

@@ -1,0 +1,53 @@
+package GasPumps;
+import Data.*;
+import MDA_EFSM.*;
+import OP.OP;
+import AF.*;
+
+public abstract class GP1 {
+	public DS1 d;
+	public MDA_EFSM m;
+	public OP p;
+	public GP1Factory af;
+	
+	public GP1() {
+		d = new DS1();
+		af = new GP1Factory(d);
+		p = new OP(af);
+		m = new MDA_EFSM(p);
+	}
+	
+	public void Activate(int a) {
+		if(a>0) {
+			d.temp_a = a;
+			m.Activate();
+		}
+	}
+	
+	public void PayCash(int c) {
+		if(c>0) {
+			d.temp_c = c;
+			m.PayCash();
+		}
+	}
+	
+	public void PayCredit() {
+		m.PayCredit();
+	}
+	
+	public void Reject() {
+		m.Reject();
+	}
+	
+	public void Cancel() {
+		m.Cancel();
+	}
+	
+	public void StartPump() {
+		m.StartPump();
+	}
+	
+	public void PumpLiter() {
+		m.Pump();
+	}
+}

@@ -1,0 +1,124 @@
+package AF;
+
+import MetaActions.CancelMsg.*;
+import MetaActions.DisplayMenu.*;
+import MetaActions.EjectCard.*;
+import MetaActions.EnterPinMsg.*;
+import MetaActions.GasPumpedMsg.*;
+import MetaActions.InitializeData.*;
+import MetaActions.PayMsg.*;
+import MetaActions.PrintReceipt.*;
+import MetaActions.PumpGasUnit.*;
+import MetaActions.RejectMsg.*;
+import MetaActions.ReturnCash.*;
+import MetaActions.SetInitialValues.*;
+import MetaActions.SetPrice.*;
+import MetaActions.SetW.*;
+import MetaActions.StoreCash.*;
+import MetaActions.StorePin.*;
+import MetaActions.StorePrices.*;
+import MetaActions.WrongPinMsg.*;
+import Data.*;
+
+public class GP1Factory extends AbstractFactory {
+	DataStore dataStore;
+	
+	public GP1Factory() {
+		dataStore = new DS1();
+	}
+	
+	public StorePrices GetStorePrices() {
+		return new StorePrices1(dataStore);
+	}
+
+	public PayMsg GetPayMsg() {
+		return new PayMsg1();
+	}
+
+	public StoreCash GetStoreCash() {
+		return new StoreCash1(dataStore);
+	}
+
+	public DisplayMenu GetDisplayMenu() {
+		return new DisplayMenu1();
+	}
+
+	public RejectMsg GetRejectMsg() {
+		return new RejectMsg1();
+	}
+
+	public SetPrice GetSetPrices() {
+		return new SetPrice1();
+	}
+
+	public SetInitialValues GetSetInitialValues() {
+		return new SetInitialValues();
+	}
+
+	@Override
+	public PumpGasUnit GetPumpGasUnit() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public GasPumpedMsg GetGasPumpedMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PrintReceipt GetPrintReceipt() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CancelMsg GetCancelMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ReturnCash GetReturnCash() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public WrongPinMsg GetWrongPinMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public StorePin GetStorePin() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EnterPinMsg GetEnterPinMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public InitializeData GetInitializeData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SetW GetSetW() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EjectCard GetEjectCard() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

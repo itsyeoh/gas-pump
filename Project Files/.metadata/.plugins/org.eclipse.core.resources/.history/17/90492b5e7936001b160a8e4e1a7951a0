@@ -1,0 +1,5 @@
+package MetaActions.PrintReceipt;
+
+public abstract class PrintReceipt {
+
+}

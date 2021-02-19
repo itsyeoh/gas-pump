@@ -1,0 +1,12 @@
+package MDA_EFSM;
+import OP.OP;
+public class Start extends State {
+	public Start(MDA_EFSM m, OP p) { super(m, p); }
+
+	public void Activate() {
+		if (m.s == m.LS[0]) {
+			p.StorePrices();
+			m.s = m.LS[1];
+		}
+	}
+}

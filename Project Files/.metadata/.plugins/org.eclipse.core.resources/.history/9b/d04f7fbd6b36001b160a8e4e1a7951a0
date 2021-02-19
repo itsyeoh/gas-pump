@@ -1,0 +1,5 @@
+package MetaActions.StorePrices;
+
+public abstract class StorePrices {
+	public void StorePrices()
+}

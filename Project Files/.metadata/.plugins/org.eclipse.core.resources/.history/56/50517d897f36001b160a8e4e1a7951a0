@@ -1,0 +1,11 @@
+package AF;
+
+import Data.*;
+import MetaActions.*;
+import MetaActions.StorePrices.StorePrices;
+
+public abstract class AbstractFactory {
+	public abstract StorePrices GetStorePrices();
+	public abstract PayMsg GetPayMsg();
+	
+}

@@ -1,0 +1,5 @@
+package MetaActions.DisplayMenu;
+import Data.*;
+public abstract class DisplayMenu {
+	public abstract void DisplayMenu();
+}

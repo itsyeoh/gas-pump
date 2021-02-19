@@ -1,0 +1,8 @@
+package MetaActions.PumpGasUnit;
+import Data.*;
+
+public class PumpGasUnit1 extends PumpGasUnit {
+	public void PumpGasUnit() {
+		
+	}
+}

@@ -1,0 +1,5 @@
+package MetaActions.DisplayMenu;
+
+public abstract class DisplayMenu {
+
+}
